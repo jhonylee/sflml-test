@@ -1,12 +1,12 @@
-#include "../include/game/Game.hpp"
+#include "../../include/game/Game.hpp"
+#include "../../include/scenario/Scenario.hpp"
 
 
 Game::Game(){
 }
 void Game::init(){
     this->window = new sf::RenderWindow(sf::VideoMode(750,750),"Jogo");
-    
-
+    Scenario scenario;
 }
 void Game::endgame(){
 
@@ -48,7 +48,7 @@ void Game::update(){
 }
 void Game::render(){
     this->window->clear();
-    //this->window->draw();
+    this->scenario.printTextures(this->window);
     this->window->display();
     
 

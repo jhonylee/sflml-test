@@ -21,7 +21,7 @@ Scenario::Scenario(){
     this->loadSprites();
 
 
-
+    this->assign();
     
 
 }
