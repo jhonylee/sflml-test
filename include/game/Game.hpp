@@ -4,21 +4,21 @@
 class Game
 {
 private:
-    sf::RenderWindow window;
+    sf::RenderWindow *window;
     sf::Event sfevent;
+    sf::Clock clock;
+    float ps;
+
 public:
     Game(/* args */);
+    void endgame();
+    void updateEvents();
+    void update();
+    void render();
+    void run();
+    void init();
     ~Game();
 };
-
-Game::Game(/* args */)
-{
-       window.
-}
-
-Game::~Game()
-{
-}
 
 
 #endif
